@@ -34,3 +34,7 @@
 *.user
 *.opensdf
 *.sdf
+.depend
+.DS_Store
+config.log
+config.mak

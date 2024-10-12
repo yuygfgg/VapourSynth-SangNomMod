@@ -1,6 +1,10 @@
 #include <vapoursynth/VSHelper.h>
 #include <vapoursynth/VapourSynth.h>
+#ifdef __X86_64__
 #include <emmintrin.h>
+#elif defined (__ARM_NEON__)
+#include "sse2neon.h"
+#endif
 #include <stdio.h>
 #include "IScriptEnvironment.h"
 
